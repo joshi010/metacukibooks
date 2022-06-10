@@ -73,7 +73,8 @@ nav{
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
-    
+    row-gap: 69px;
+    padding-bottom: 69px;
 }
 
 .img-container{
