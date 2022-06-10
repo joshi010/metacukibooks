@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+h1{
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+}
+
+.ham-search{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+    padding-left:14px;
+    padding-right: 20px;
+
+}
+
+.mag-cont{
+    width: 55px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mag-cont img{
+    width: 100%;
+}
+
+.ham{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.line{
+    background-color: black;
+    height: 2px;
+    width: 53px;
+
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.publicar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 42px;
+    font-family: 'Anton', sans-serif;
+    background-color: #62ff48;
+    cursor: pointer;
+}
+
+.search-cards{
+    margin-top: 69px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.img-container{
+    width: 100%;
+    height: 277px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+}
+
+a{
+    width: 100%;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+.card{
+    width: 407px;
+    height: 436px;
+    background-color: #fff;
+    box-shadow: 0 10px 5px lightgray;
+    transition: 0.5s all;
+}
+
+.info{
+    margin-top: 25px;
+    margin-left: 18px;
+}
+
+.card:hover{
+    transition: 0.8s all;
+    box-shadow: 0 20px 20px lightgray;
+}
