@@ -80,6 +80,10 @@ nav a:hover{
     transition: 0.3s all;
 }
 
+.ham-cont{
+    display: none;
+}
+
 .nav-options{
     display: flex;
     list-style: none;
@@ -249,17 +253,60 @@ a{
         text-align: center;
     }
 
+    .tit-desc{
+        width: 50%;
+        background-color: #fff;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+    .ham-cont{
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+
+    }
+
     .ham{
         display: flex;
+        padding: 0 15px;
+
     }
 
     .nav-options{
-        display: none;
+        position: fixed;
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #aaaaaa;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px 0;
+        bottom: 100%;
+        transition: 0.3s all;
+
+    }
+
+    nav a{
+        padding: 15px;
+    }
+
+    .show{
+        bottom: calc(100% - 237px);
+        z-index: 0;
+        transition: 0.3s all;
     }
 
     nav{
-        padding: 0 15;
-        height: 60px;
+        padding: 0;
+        height: 65px;
     }
 
     .jumbo-search-bar{
@@ -268,7 +315,7 @@ a{
 
     .search-inicio{
         width: 70%;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .big-search-button{
@@ -277,5 +324,10 @@ a{
 
     .search-cards{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card{
+        width: 295px;
+        height: 305px;
     }
 }
