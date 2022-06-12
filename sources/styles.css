@@ -45,6 +45,7 @@ h1, h2{
     justify-content: center;
     height: 100%;
     cursor: pointer;
+    display: none;
 }
 
 .line{
@@ -220,7 +221,7 @@ a{
     }
 }
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 812px){
 
     h1{
         font-size: 35px;
@@ -239,4 +240,42 @@ a{
         display: block;
     }
 
+}
+
+
+@media only screen and (max-width: 613px){
+
+    h1{
+        text-align: center;
+    }
+
+    .ham{
+        display: flex;
+    }
+
+    .nav-options{
+        display: none;
+    }
+
+    nav{
+        padding: 0 15;
+        height: 60px;
+    }
+
+    .jumbo-search-bar{
+        width: 90%;
+    }
+
+    .search-inicio{
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .big-search-button{
+        width: 30%;
+    }
+
+    .search-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
