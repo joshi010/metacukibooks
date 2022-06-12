@@ -13,6 +13,11 @@ h1{
     font-family: 'Bahnschrift', sans-serif;
 }
 
+h1, h2{
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: bold;
+}
+
 .ham-search{
     display: flex;
     gap: 21px;
@@ -90,10 +95,15 @@ nav a:hover{
     cursor: pointer;
 }
 
+.nav-active{
+    color: gray;
+    cursor: default;
+}
+
 .jumbotron-search{
     height: 473px;
     width: 100%;
-    background-color: #aaaaaa;
+    background-color: #aaaaaa38;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,30 +111,40 @@ nav a:hover{
 }
 
 .jumbo-search-bar{
+    margin-top: 54px;
     display: flex;
 }
 
 .big-search-button{
-    width: 200px;
-    height: 76px;
+    width: 170px;
+    height: 70px;
     background-color: #7cd500;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Bahnschrift', sans-serif;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    cursor: pointer
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
 
 .search-inicio{
-    width: 600px;
-    height: 76px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 450px;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 29px 26px;
     border-style: none;
+    outline: none;
+    font-size: 20px;
+
 }
+
+.section-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+
 
 .search-cards{
     margin-top: 69px;
@@ -170,4 +190,53 @@ a{
 .card:hover{
     transition: 0.8s all;
     box-shadow: 0 20px 20px lightgray;
+}
+
+
+@media only screen and (max-width: 1625px){
+
+    .search-cards{
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card{
+        width: 271px;
+        height: 290px;
+    }
+
+
+    .img-container{
+        height: 174px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .search-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #cn-4{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 770px){
+
+    h1{
+        font-size: 35px;
+    }
+
+    nav{
+        padding: 0 35px;
+    }
+
+    .search-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    #cn-4{
+        display: block;
+    }
+
 }
