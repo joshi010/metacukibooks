@@ -56,6 +56,7 @@ h1, h2{
 }
 
 nav{
+    position: sticky;
     font-family: 'Bahnschrift', sans-serif;
     display: flex;
     height: 70px;
@@ -64,6 +65,7 @@ nav{
     background-color: #fff;
     padding: 0 62px;
     font-weight: bold;
+    top: 0;
 }
 
 nav a:link{
@@ -197,6 +199,13 @@ a{
     box-shadow: 0 20px 20px lightgray;
 }
 
+.jumbotron{
+    background-color: #f9f0d7;
+    background-image: url('./imgs/portada2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
 
 @media only screen and (max-width: 1625px){
 
@@ -213,6 +222,10 @@ a{
 
     .img-container{
         height: 174px;
+    }
+
+    .jumbotron{
+        background-position: bottom;
     }
 }
 @media only screen and (max-width: 1120px){
@@ -244,6 +257,9 @@ a{
         display: block;
     }
 
+    .jumbotron{
+        background-size: 945px;
+    }
 }
 
 
@@ -329,5 +345,9 @@ a{
     .card{
         width: 295px;
         height: 305px;
+    }
+
+    .jumbotron{
+        background-size: 506px 200px;
     }
 }
