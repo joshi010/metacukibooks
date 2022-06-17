@@ -66,6 +66,13 @@ nav{
     padding: 0 62px;
     font-weight: bold;
     top: 0;
+    transition: all 0.6s;
+
+}
+
+.nav-shadow{
+    box-shadow: 0 10px 10px lightgray;
+    transition: all 0.5s;
 }
 
 nav a:link{
@@ -196,7 +203,7 @@ a{
 
 .card:hover{
     transition: 0.8s all;
-    box-shadow: 0 20px 20px lightgray;
+    box-shadow: 0 30px 20px lightgray;
 }
 
 .jumbotron{
@@ -205,6 +212,92 @@ a{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+}
+
+.center{
+    margin: 10px auto;
+    text-align: center;
+}
+
+.button {
+    margin: 35px 0;
+}
+
+.button a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:  'Bahnschrift', sans-serif;
+    color: inherit;
+
+}
+
+.bg-green:hover{
+    background-color: #6ebd00;
+    transition: all 0.7s;
+}
+
+.bg-green{
+    background-color: #7cd500;
+}
+
+.bg-gray{
+    background-color: #e7e0cd;
+}
+
+.fs-2{
+    font-size: 20px;
+}
+
+.fs-3{
+    font-size: 30px;
+}
+
+.my-d{
+    margin: 110px 0;
+}
+
+.my-2{
+    margin: 20px 0;
+}
+.foros{
+    width: 100%;
+    height: auto;
+    margin-top: 147px;
+    padding: 56px 0;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.foros-inf{
+    margin: 20px;
+}
+
+.citas {
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+#genera-cita{
+    font-size: 50px;
+}
+
+#centrar{
+    display: flex;
+    justify-content: center;
+}
+
+#autor{
+    font-style: italic;
+}
+
+.extra-btn{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    font-family:  'Bahnschrift', sans-serif;
+    color: inherit;
+    width: 100px;
 }
 
 @media only screen and (max-width: 1625px){
@@ -349,5 +442,9 @@ a{
 
     .jumbotron{
         background-size: 506px 200px;
+    }
+
+    #genera-cita {
+        font-size: 40px;
     }
 }
