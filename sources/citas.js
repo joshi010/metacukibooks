@@ -18,13 +18,32 @@ let cita3 = new citasLibro('Estar solo no tiene nada que ver con cuantas persona
 let cita4 = new citasLibro('Sea un hombre o sea más que un hombre. Sea firme con su propósito y firme como una piedra', 'Frankestein');
 let cita5 = new citasLibro('El hombre débil se vuelve fuerte cuando no tiene nada, porque sólo entonces puede sentir la locura de la desesperación', 'La compañía blanca');
 
+let numArr = [];
 
 const randomQuote = () => {
     let arr = [cita1, cita2, cita3, cita4, cita5]
-    let rand = Math.floor(Math.random() * arr.length - 1);
-    citas.innerHTML = arr[rand].cita;
-    autor.innerHTML = `—${arr[rand].autor}` ;
-    console.log(rand);
+
+    const rand = () => {
+        let num = arr.length;
+        let rand = Math.floor(Math.random() * num);
+        return rand;
+    }
+
+    const verRand = () => {
+        let ver = rand();
+        numArr.push(rand());
+        if(numArr.length - 1 == numArr.length - 2){
+            return rand();
+        } else {
+            return ver;
+        }
+
+
+    }    
+    let ver = verRand();
+    citas.innerHTML = arr[ver].cita;
+    autor.innerHTML = `—${arr[ver].autor}` ;
+
 
 }
 

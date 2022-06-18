@@ -432,12 +432,14 @@ a{
     }
 
     .search-cards{
-        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .card{
         width: 295px;
         height: 305px;
+        margin: 0 20px;
     }
 
     .jumbotron{
@@ -446,5 +448,7 @@ a{
 
     #genera-cita {
         font-size: 40px;
+        margin: 0 15px;
     }
+
 }
