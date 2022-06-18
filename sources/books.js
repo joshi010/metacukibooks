@@ -5,9 +5,9 @@ const rank3IMG = document.getElementById('rank-3-img');
 const rank4IMG = document.getElementById('rank-4-img');
 
 //title rank
-const tit1 = document.getElementById('h2-2');
-const tit2 = document.getElementById('h2-3');
-const tit3 = document.getElementById('h2-1');
+const tit1 = document.getElementById('h2-1');
+const tit2 = document.getElementById('h2-2');
+const tit3 = document.getElementById('h2-3');
 const tit4 = document.getElementById('h2-4');
 
 //autor rank
