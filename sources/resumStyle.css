@@ -1,0 +1,39 @@
+.busc-flex{
+    display: flex;
+    margin: 40px 70px;
+    justify-content: space-between;
+}
+
+.resultados{
+    margin: 50px 0;
+
+
+}
+
+.square{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+
+}
+
+.filt-bus{
+    width: 40%;
+}
+
+.card-bus h3{
+    font-size: 25px;
+}
+
+.card-bus a{
+    text-decoration: none;
+}
+
+.card-bus a:hover{
+    text-decoration: underline;
+}
+
+.card-bus{
+    margin: 40px 0;
+    font-size: 20px;
+}
