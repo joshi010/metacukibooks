@@ -37,3 +37,14 @@
     margin: 40px 0;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 500px){
+
+    h1{
+        font-size: 27px;
+    }
+
+    .busc-flex{
+        margin: 22px 26px;
+    }
+}
