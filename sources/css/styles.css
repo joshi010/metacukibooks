@@ -71,7 +71,7 @@ nav{
 }
 
 .nav-shadow{
-    box-shadow: 0 10px 10px lightgray;
+    box-shadow: 0 10px 10px rgba(211, 211, 211, 0.486);
     transition: all 0.5s;
 }
 
@@ -153,6 +153,10 @@ nav a:hover{
     outline: none;
     font-size: 20px;
 
+}
+
+.contorn{
+    border: 1px solid rgba(0, 0, 0, 0.411);
 }
 
 .section-heading{
@@ -329,6 +333,19 @@ a{
     width: 100px;
 }
 
+.wi-inic{
+    width: inherit;
+}
+
+.on-hide{
+    display: flex;
+}
+
+.fix{
+    position: sticky;
+    top: 100px;
+}
+
 @media only screen and (max-width: 1625px){
 
     .search-cards{
@@ -460,13 +477,35 @@ a{
         height: 65px;
     }
 
+    .fix{
+        top: 70px;
+    }
+
+    .jumbo-search-bar{
+        width: 100%;
+    }
+
+    .wi-inic{
+        width: 80% !important;
+        border-radius: 5px;
+        
+    }
+
     .search-inicio{
-        width: 70%;
+        width: 65%;
         font-size: 18px;
+        padding: 0 10px;
+        height: 60px;
+        border: 1px solid rgba(0, 0, 0, 0.411);
     }
 
     .big-search-button{
-        width: 30%;
+        width: 20%;
+        height: 60px;
+    }
+
+    .on-hide{
+        display: none;
     }
 
     .card{

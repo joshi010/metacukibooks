@@ -1,54 +1,9 @@
-.busc-flex{
+.nav-fl{
     display: flex;
-    margin: 40px 70px;
-    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
-.resultados{
-    margin: 50px 0;
-
-
-}
-
-.square{
-    height: 200px;
-    width: 200px;
-    background-color: aqua;
-
-}
-
-.filt-bus{
-    width: 40%;
-}
-
-.card-bus h3{
-    font-size: 25px;
-}
-
-.card-bus a{
-    text-decoration: underline;
-}
-
-.card-bus a:hover{
-    text-decoration: none;
-}
-
-.card-bus{
-    margin: 40px 0;
-    font-size: 20px;
-}
-
-.val {
-    display: none;
-}
-
-@media only screen and (max-width: 500px){
-
-    h1{
-        font-size: 27px;
-    }
-
-    .busc-flex{
-        margin: 22px 26px;
-    }
+.nav-fl span{
+    color: rgb(126, 126, 126);
 }

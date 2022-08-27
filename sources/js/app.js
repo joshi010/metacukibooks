@@ -32,14 +32,10 @@ ary = arr.map((book) => {
     return { name: book.name, author: book.author, link: book.link ,element: card };
 })
 
-document.querySelectorAll('.card').forEach(item => {
-    ary.forEach(book => {
-        let linkOp = book.link;
-        item.onclick = () => {
-            window.open(linkOp);
-        }
 
-        console.log(linkOp);
-    })
-
+ary.forEach(e => {
+    e.element.onclick = () => {
+        window.open(e.link, '_self');
+    }
+    console.log(e.link);
 })

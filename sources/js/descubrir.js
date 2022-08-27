@@ -27,5 +27,12 @@ ary = arr.map((book) => {
 
     bookCont.append(card);
 
-    return { name: book.name, author: book.author, element: card };
+    return { name: book.name, author: book.author, link: book.link, element: card };
+})
+
+ary.forEach(e => {
+    e.element.onclick = () => {
+        window.open(e.link);
+    }
+    console.log(e.link);
 })

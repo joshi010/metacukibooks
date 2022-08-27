@@ -11,7 +11,7 @@ let arr = [
         name: 'Corazón de Tinta',
         author: 'Cornelia Funke',
         image: 'https://images-na.ssl-images-amazon.com/images/I/51ws1Es1HwL.jpg',
-        link: '',
+        link: './pages/resumen/tinta.html',
         id: 2 
     },
 
@@ -19,7 +19,7 @@ let arr = [
         name: 'Los Miserables',
         author: 'Victor Hugo',
         image: 'https://www.elejandria.com/covers/Los_Miserables-Hugo_Victor-lg.png',
-        link: '',
+        link: '.pages/resumen/miserables.html',
         id: 2 
     },
 
@@ -27,7 +27,7 @@ let arr = [
         name: 'Yo soy Malala',
         author: 'Malala Yousafzai',
         image: 'https://http2.mlstatic.com/D_NQ_NP_665695-MLM40575075832_012020-O.jpg',
-        link: '',
+        link: './pages/resumen/malala.html',
         id: 2 
     },
 
