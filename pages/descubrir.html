@@ -3,13 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../sources/styles.css">
-    <script src="../sources/app.js" defer></script>
-    <script src="../sources/ham-icon.js" defer></script>
+    <link rel="stylesheet" href="../sources/css/styles.css">
+    <script src="../sources/js/ham-icon.js" defer></script>
+    <script type="module" src="../sources/js/descubrir.js" defer></script>
     <title>Metacuki: Resumenes de libros</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <h1 class="tit-desc">mbuks</h1>
         <ul class="nav-options">
             <li><a href="../index.html">INICIO</a></li>
@@ -39,51 +39,25 @@
         <h2>DESCUBRIR</h2>
     </div>
 
-    <div id="card-grid" class="search-cards">
-        <div class="card">
-            <div class="img-container">
-                <a href="./resumen/sombra.html">
-                    <img src="https://images.penguinrandomhouse.com/cover/700jpg/9780593207208" alt="portada-sombra del viento"></a>
-
-            </div>
-            <div class="info">
-                <h2>La Sombra del Viento</h2>
-                <p>Carlos Ruiz Zafón</p>
-            </div>
+    <div class="jumbo-search-bar">
+        <input class="search-inicio" type="search" placeholder="Ingresa el nombre de algún libro" book-search2>
+        <div class="big-search-button">
+            <h3>BUSCAR</h3>
         </div>
+    </div>
 
-        <div class="card">
-            <div class="img-container">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Ebcosette.jpg" alt="Los Miserables portada"></a>
+    <div class="f-center">
+        <div id="card-grid" class="search-cards" data-book-container2></div>
+    </div>
 
+        <template data-book-card2>
+            <div class="card">
+                <div class="image"><img src="#" alt="" image-template2></div>
+                <div class="header" data-header2></div>
+                <div class="body" data-body2></div>
             </div>
-            <div class="info">
-                <h2>Los Miserables</h2>
-                <p>Víctor Hugo</p>
-            </div>
-        </div>
+        </template>
 
-        <div class="card">
-            <div class="img-container">
-            <a href="#"><img src="https://images.cdn2.buscalibre.com/fit-in/360x360/30/bb/30bbd0c177ca8cf7859a151b18cde7cb.jpg" alt="corazón de tinta portada"></a>
-
-            </div>
-            <div class="info">
-                <h2>Corazón de Tinta</h2>
-                <p>Cornelia Funke</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="img-container">
-                <a href="#"><img src="https://imagessl.casadellibro.com/img/autores/malala.jpg" alt="malala portada"></a>
-
-            </div>
-            <div class="info">
-                <h2>Yo soy Malala</h2>
-                <p>Malala Yousafzai</p>
-            </div>
-        </div>
 
         
 

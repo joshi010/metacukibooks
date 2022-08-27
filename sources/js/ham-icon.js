@@ -1,3 +1,4 @@
+//ham-icon
 let ham = document.querySelector('.ham');
 const navOptions = document.querySelector('.nav-options')
 
