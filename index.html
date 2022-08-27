@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./sources//css/styles.css">
     <script src="./sources/js/ham-icon.js" defer></script>
     <script src="./sources/js/citas.js" defer></script>
-    <script src="./sources/js/books.js" defer></script>
     <script type="module" src="./sources/js/app.js" defer></script>
     <title>Metacuki: Resumes de libros</title>
 </head>
@@ -55,7 +54,7 @@
     <div class="overflow" data-book-container></div>
 
     <template data-book-card>
-        <div class="card">
+        <div class="card" card-all>
             <div class="image"><img src="#" alt="" image-template></div>
             <div class="header" data-header></div>
             <div class="body" data-body></div>
@@ -63,7 +62,7 @@
     </template>
 
     <div class="button center">
-        <a href="#" class="button bg-green">DESCUBRIR</a>
+        <a href="./pages/descubrir.html" class="button bg-green">DESCUBRIR</a>
     </div>
 
     <div class="foros bg-gray my-d">

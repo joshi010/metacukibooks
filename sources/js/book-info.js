@@ -3,7 +3,7 @@ let arr = [
         name:  'La Sombra del Viento',
         author: 'Carlos Ruiz Zafón',
         image: 'https://i.pinimg.com/originals/1e/14/72/1e1472bd395a0183fb7afaa93848b93b.jpg',
-        link: '',
+        link: './pages/resumen/sombra.html',
         id: 1
     },
 
