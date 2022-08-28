@@ -7,3 +7,55 @@
 .nav-fl span{
     color: rgb(126, 126, 126);
 }
+
+.resu-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin-left: 57px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.resu-card{
+    width: 554px;
+    height: 251px;
+    padding: 40px 24px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    font-family: 'Bahnschrift', sans-serif;
+    cursor: pointer;
+}
+
+.resu-card-1{
+    height: 50%;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.autor{
+    margin-top: 21px;
+}
+
+.autor span{
+    font-style: italic;
+}
+
+.resu-card-2{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.resu-card-2 li{
+    list-style: none;
+}
+
+.tags{
+    margin-top: 17px;
+}
